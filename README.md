@@ -41,6 +41,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 #### MVP 
 
+- Build a single page APP with React
 - Use Airtable to create two different tables storing information on rescues and racetracks
 - Render the data to the app grabbing the data via axios
 - Allow users to add Rescues to the database via axios
