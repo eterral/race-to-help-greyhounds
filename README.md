@@ -25,16 +25,6 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
     {
     "records": [
         {
-            "id": "recX8xBbxMCQWZkBo",
-            "fields": {},
-            "createdTime": "2021-12-02T02:31:23.000Z"
-        },
-        {
-            "id": "recZ3fgc7R5xUTZhO",
-            "fields": {},
-            "createdTime": "2021-12-02T02:31:23.000Z"
-        },
-        {
             "id": "reczZXvpn1U0Fbxkn",
             "fields": {
                 "name": "Greyhound Adoption League of Texas",
@@ -97,10 +87,10 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 ## SWOT Analysis
 
 ### Strengths:
-Axios, React, functional coding
+Axios, React, and functional coding. Logic has always been a strength of mine through the course and React has only improved it.
 
 ### Weaknesses:
-Styling/CSS
+Styling/CSS. I have continued to have a rough time going into styling knowing how I want to execute it.
 
 ### Opportunities:
 Using libraries to help with styling
