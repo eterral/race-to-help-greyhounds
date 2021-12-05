@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 export default function List({rescues, selector}) {
 
     const [renderList, setRenderList] = useState([])
-
+//consider rewriting useeffect to be dynamic with racetracks
     useEffect(() => {
         if(selector != ''){
             setRenderList(rescues.filter(rescue => rescue.fields.state === selector))
