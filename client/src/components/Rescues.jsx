@@ -1,28 +1,24 @@
 import React from 'react'
-import {getRescues} from '../services'
+import {grabRescues} from '../services'
 import { useEffect,useState } from 'react'
+import List from './List'
 
-export default function Rescues() {
-    const [rescues, setRescues] = useState([])
+export default function Rescues({states, rescues}) {
 
-    useEffect(() => {
-        const getAllRescues = async () => {
-            const response = await grabRescues();
-            setRescues(response);
-        };
-        getAllRescues();
-    }, []);
+    const [selector, setSelector] = useState('')
+
     return (
         <div>
             <h2>Find a Local Rescue</h2>
             <br/>
             <br/>
-            <select id="state-selector">
+            <select id="state-selector" onChange={(e) => setSelector(e.target.value)}>
                 <option selected disabled hidden>Choose State</option>
-                {rescues.map((rescue) => {
-                    <option value={rescue.fields.state}>
-                })}
+                {states.map((state) => (
+                    <option value={state}>{state}</option>
+                ))}
             </select>
+            <List rescues={rescues} selector={selector} />
         </div>
     )
 }
