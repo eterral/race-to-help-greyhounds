@@ -29,6 +29,7 @@ function App() {
           path="/rescues"
           element={<Rescues states={states} rescues={rescues} />}
         />
+        <Route path="/racetracks" element={<Racetracks />} />
       </Routes>
     </div>
   );
