@@ -1,13 +1,13 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 
-export default function List({rescues, selector}) {
+export default function List({dataList, selector}) {
 
     const [renderList, setRenderList] = useState([])
 //consider rewriting useeffect to be dynamic with racetracks
     useEffect(() => {
         if(selector != ''){
-            setRenderList(rescues.filter(rescue => rescue.fields.state === selector))
+            setRenderList(dataList.filter(item => item.fields.state === selector))
         }
     }, [selector])
 

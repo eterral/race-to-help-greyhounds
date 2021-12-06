@@ -18,7 +18,7 @@ export default function Rescues({states, rescues}) {
                     <option value={state}>{state}</option>
                 ))}
             </select>
-            <List rescues={rescues} selector={selector} />
+            <List dataListç={rescues} selector={selector} />
         </div>
     )
 }
