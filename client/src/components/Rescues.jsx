@@ -1,6 +1,6 @@
 import React from 'react'
-import {grabRescues} from '../services'
-import { useEffect,useState } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import List from './List'
 
 export default function Rescues({states, rescues}) {
@@ -11,6 +11,7 @@ export default function Rescues({states, rescues}) {
         <div>
             <h2>Find a Local Rescue</h2>
             <br/>
+            <Link to="/rescues/add">Add a Rescue</Link>
             <br/>
             <select id="state-selector" onChange={(e) => setSelector(e.target.value)}>
                 <option selected disabled hidden>Choose State</option>
@@ -18,7 +19,7 @@ export default function Rescues({states, rescues}) {
                     <option value={state}>{state}</option>
                 ))}
             </select>
-            <List dataListç={rescues} selector={selector} />
+            <List dataList={rescues} selector={selector} />
         </div>
     )
 }

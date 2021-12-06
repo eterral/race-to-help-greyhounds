@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Rescues from "./components/Rescues";
 import Racetracks from "./components/Racetracks";
+import Form from "./components/Form";
 
 function App() {
   const [rescues, setRescues] = useState([]);
@@ -54,6 +55,7 @@ function App() {
             <Racetracks states={racetrackStates} racetracks={racetracks} />
           }
         />
+        <Route path="/rescues/add" element={<Form />} />
       </Routes>
     </div>
   );
