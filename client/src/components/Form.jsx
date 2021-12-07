@@ -25,26 +25,34 @@ export default function Form({setToggle}) {
 
     return (
         <form onSubmit={handleSubmit}>
+            <h4>Rescue Name:</h4>
             <input 
                 type="text" 
                 value={name} 
                 name='name' 
                 onChange={(e) => setName(e.target.value)}/>
+            <br/>
+            <h4>Website:</h4>
             <input 
                 type="text" 
                 value={website} 
                 name='website' 
                 onChange={(e) => setWebsite(e.target.value)}/>
+            <br/>
+            <h4>State:</h4>
             <input 
                 type="text" 
                 value={state} 
                 name='state' 
                 onChange={(e) => setState(e.target.value)}/>
+            <br/>
+            <h4>Email Contact:</h4>
             <input 
                 type="text" 
                 value={contact} 
                 name='contact' 
                 onChange={(e) => setContact(e.target.value)}/> 
+            <br/>
             <button>Add Rescue</button>
         </form>
     )
