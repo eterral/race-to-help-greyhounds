@@ -15,6 +15,7 @@ function App() {
   const [racetracks, setRacetracks] = useState([]);
   const [rescueStates, setRescueStates] = useState([]);
   const [racetrackStates, setRacetrackStates] = useState([]);
+  const [toggle, setToggle] = useState(true);
 
   useEffect(() => {
     const getAllRescues = async () => {
@@ -25,7 +26,7 @@ function App() {
       ]);
     };
     getAllRescues();
-  }, []);
+  }, [toggle]);
 
   useEffect(() => {
     const getAllRacetracks = async () => {
@@ -55,7 +56,7 @@ function App() {
             <Racetracks states={racetrackStates} racetracks={racetracks} />
           }
         />
-        <Route path="/rescues/add" element={<Form />} />
+        <Route path="/rescues/add" element={<Form setToggle={setToggle} />} />
       </Routes>
     </div>
   );

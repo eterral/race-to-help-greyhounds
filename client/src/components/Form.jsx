@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { postRescue } from '../services'
 
-export default function Form() {
+export default function Form({setToggle}) {
     const [name, setName] = useState('')
-    const [name, setWebsite] = useState('')
-    const [name, setState] = useState('')
-    const [name, setContact] = useState('')
+    const [website, setWebsite] = useState('')
+    const [state, setState] = useState('')
+    const [contact, setContact] = useState('')
     const navigate = useNavigate()
 
     const handleSubmit = async (e) => {

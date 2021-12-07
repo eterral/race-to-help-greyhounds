@@ -17,3 +17,8 @@ export const grabRacetracks = async () => {
   const response = await axios.get(BASE_URL_RACETRACKS, config);
   return response.data.records;
 };
+
+export const postRescue = async (body) => {
+  const response = await axios.post(BASE_URL_RESCUES, { fields: body }, config);
+  return response.data;
+};
