@@ -1,4 +1,17 @@
 .header {
-    background-image: url('../resources/greyhound_header.jpg')
-    
+    background-image: url('../resources/greyhound_header.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh
+}
+.headerText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 46px;
+    color: black
 }
