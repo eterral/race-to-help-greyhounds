@@ -1,4 +1,5 @@
 import React from 'react'
+import './List.css'
 import {useState, useEffect} from 'react'
 
 export default function List({dataList, selector}) {
