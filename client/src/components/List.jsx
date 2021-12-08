@@ -6,7 +6,7 @@ export default function List({dataList, selector}) {
     const [renderList, setRenderList] = useState([])
 
     useEffect(() => {
-        if(selector != ''){
+        if(selector !== ''){
             setRenderList(dataList.filter(item => item.fields.state === selector))
         }
     }, [selector])
