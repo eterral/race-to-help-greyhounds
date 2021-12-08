@@ -4,9 +4,9 @@ import {useState, useEffect} from 'react'
 export default function List({dataList, selector}) {
 
     const [renderList, setRenderList] = useState([])
-//consider rewriting useeffect to be dynamic with racetracks
-    useEffect(() => {
-        if(selector != ''){
+
+    useEffect((dataList) => {
+        if(selector !== ''){
             setRenderList(dataList.filter(item => item.fields.state === selector))
         }
     }, [selector])

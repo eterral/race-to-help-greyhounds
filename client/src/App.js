@@ -1,6 +1,5 @@
 import "./App.css";
-import update from "react-addons-update";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { grabRescues } from "./services";
 import { grabRacetracks } from "./services";
