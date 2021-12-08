@@ -1,0 +1,10 @@
+.links{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+.about{
+    margin-left: 30%;
+    margin-right: 30%
+}
