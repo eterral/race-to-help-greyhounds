@@ -2,7 +2,7 @@
 
 ## Race To Help Greyhounds
 
-[deployment link]
+https://lucid-bhabha-4c35a5.netlify.app/
 
 ## Project Description
 
@@ -10,7 +10,7 @@ Race To Help Greyhounds is built to help people rescue greyhounds either through
 
 ## Wireframes
 
-![Wirefram](https://i.imgur.com/pDCqb4O.png)
+![Wireframe](https://i.imgur.com/qHPzNz9.png)
 
 ## Component Hierarchy
 
