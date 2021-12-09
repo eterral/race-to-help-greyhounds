@@ -8,6 +8,7 @@ import About from "./components/About";
 import Rescues from "./components/Rescues";
 import Racetracks from "./components/Racetracks";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 function App() {
   const [rescues, setRescues] = useState([]);
@@ -57,6 +58,7 @@ function App() {
         />
         <Route path="/rescues/add" element={<Form setToggle={setToggle} />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
