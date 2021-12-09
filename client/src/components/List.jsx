@@ -1,6 +1,7 @@
 import React from 'react'
 import './List.css'
 import {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 
 export default function List({dataList, selector}) {
 
@@ -15,10 +16,10 @@ export default function List({dataList, selector}) {
     return (
         <div>
             {renderList.map((item) => (
-                <div>
+                <div className="container">
                     <p>{item?.fields?.name}</p>
-                    <p>{item?.fields?.website}</p>
-                    <p>{item?.fields?.contact}</p>                                                            
+                    <p>{item?.fields?.contact}</p> 
+                    <p>{item?.fields?.website}</p>                                                           
                 </div>
             ))}
         </div>
